@@ -1,10 +1,13 @@
 # OS-ElevatorDispatch
 First assignment of OS course, implementing the  elevator dispatching algorithm.
+
 ## 一、系统概述
 ### 1.1需求分析
 运用操作系统进程管理的知识，结合操作系统调度算法，模拟电梯调度的功能。本电梯模拟系统有5个电梯，共20层楼。每个电梯在每一层有一个操作面板，往上和往下按钮以及显示当前楼层。每次按下按钮，五部电梯同时响应，将执行调度算法，选择最优电梯进行调度，调度过程可变，总是选择最优电梯进行调度，尽可能模拟真实电梯情况。考虑到电梯运行当中可能会出现操作不及时(模拟拥挤等情况)而造成的调度延时，在此基础上采用先到先服务的调度。保证最快服务用户。另外添加设置电梯移动速度和自动等待时间设置
 
 ### 1.2系统功能
+#### 截图
+![img](https://github.com/luluuuuuu/OS-ElevatorDispatch/blob/master/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/%E6%88%AA%E5%9B%BE.jpeg)
 #### 1.2.1基础功能
 共5个电梯，20层楼，每个电梯在每层楼有两个按钮，表示往上和往下请求，显示当前楼层的面板。每个电梯顶部显示电梯当前的状态。电梯内部有一个控制面板，用户进入后才能选择楼层，另设开门关门键，表示电梯开门，关门操作。在不执行开门关门时，电梯会在设定时间间隔内自动执行,若操作有悖逻辑，则会出现错误提醒。
 #### 1.2.2 核心功能
@@ -16,3 +19,4 @@ First assignment of OS course, implementing the  elevator dispatching algorithm.
   > IntellijIdea作为开发工具
   
   > 运行在Mac系统上。
+
